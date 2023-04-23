@@ -1,0 +1,161 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'css/seat.css' %}" />
+
+    <title>Movie Seat Booking</title>
+  </head>
+  <!-- <div class="navigationbar">
+    <style scoped type="stylesheet">
+      @import "nav.css";
+    </style>
+    
+    <nav>
+      <div class="heading">
+        <h4>BOOK YOUR SHOW</h4>
+      </div>
+
+      <ul class="nav-links">
+        <li>
+          <input type="tex" placeholder="Search" />
+        </li>
+        <li class="nav-item">
+          <a class="active" href="/main">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="/login">LOGIN</a>
+        </li>
+      </ul>
+    </nav>
+  </div> -->
+
+  <body>
+    <div class="movie-container">
+      <label>Pick a Timing:</label>
+      <select id="movie">
+        <option value="100">8:00 AM</option>
+        <option value="110">12:00 PM</option>
+        <option value="130">3:00 PM</option>
+        <option value="120">6:00 PM</option>
+      </select>
+    </div>
+
+    <ul class="showcase">
+      <li>
+        <div class="seat"></div>
+        <small>N/A</small>
+      </li>
+
+      <li>
+        <div class="seat selected"></div>
+        <small>Selected</small>
+      </li>
+
+      <li>
+        <div class="seat occupied"></div>
+        <small>Occupied</small>
+      </li>
+    </ul>
+
+    <div class="container">
+      <div class="screen"></div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+    </div>
+
+    <button id="submit" class="button" onclick="location.href='/login/payment'">
+      BOOK NOW
+    </button>
+
+    <style>
+      /* Style for button */
+      .button {
+        background-color: red;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 5px;
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+      }
+    </style>
+
+    <!-- <script src="seat.js"></script> -->
+    <p class="text">
+      You have selected <span id="count">0</span> seats for a price of Rs<span
+        id="total"
+        >0</span
+      >
+    </p>
+    <script src="{% static 'js/seat.js' %}"></script>
+  </body>
+</html>
+<!DOCTYPE html>

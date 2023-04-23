@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Search</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="{% static 'css/nav.css' %}" />
+  <title>Home</title>
+
+</head>
+
+<body>
+  <nav>
+    <div class="heading">
+      <h4>BOOK YOUR SHOW</h4>
+    </div>
+
+    <ul class="nav-links">
+      <li class="nav-item">
+        <a class="active" href="/main">Home</a>
+      </li>
+      <li class="nav-item">
+        <a href="/main/seats">SEATS</a>
+      </li>
+      <li class="nav-item">
+        <a href="/login">LOGIN</a>
+      </li>
+    </ul>
+  </nav>
+
+  <link rel="stylesheet" href="{% static 'css/main.css' %}">
+  <main id="main"></main>
+  <!-- js here -->
+  <script src={% static 'js/main.js' %}></script>
+
+</body>
+
+</html>

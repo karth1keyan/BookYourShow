@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <title>Payment confirmed</title>
+    <link rel="stylesheet" href="{% static 'css/pop.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/nav.css' %}" />
+  </head>
+  <body>
+    <nav>
+      <div class="heading">
+        <h4>BOOK YOUR SHOW</h4>
+      </div>
+  
+      <ul class="nav-links">
+        <li class="nav-item">
+          <a class="active" href="/main">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="/main/seats">SEATS</a>
+        </li>
+        <li class="nav-item">
+          <a href="/login">LOGIN</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="container">
+      <div class="popup">
+        <span class="material-symbols-outlined"> verified </span>
+        <h2>Thank You!</h2>
+        <p>Your payment was successful.</p>
+        <button type="button" onclick="location.href='/main'">OK</button>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      function call() {
+        location.href = "/main";
+      }
+    </script>
+  </body>
+</html>
