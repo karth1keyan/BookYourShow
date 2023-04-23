@@ -5,7 +5,7 @@ from django.contrib.auth.forms import UserCreationForm
 
 
 def main(request):
-    return render(request, 'Movie_Home/main.html')
+    return render(request, 'Movie_Home/index.html')
 
 
 def seats(request):
