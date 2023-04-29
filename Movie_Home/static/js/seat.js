@@ -3,7 +3,7 @@ const seats = document.querySelectorAll(".row .seat:not(.occupied");
 const count = document.getElementById("count");
 const total = document.getElementById("total");
 const movieSelect = document.getElementById("movie");
-const submit = document.getElementById("submit");
+const submit = document.querySelector(".submit");
 
 populateUI();
 let ticketPrice = 100;
@@ -55,9 +55,7 @@ container.addEventListener("click", (e) => {
     !e.target.classList.contains("occupied")
   ) {
     e.target.classList.toggle("selected");
-
     updateSelectedCount();
   }
 });
 updateSelectedCount();
-

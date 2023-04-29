@@ -18,32 +18,31 @@
       <div class="heading">
         <h4>BOOK YOUR SHOW</h4>
       </div>
-  
       <ul class="nav-links">
-        <li class="nav-item">
-          <a class="active" href="/main">Home</a>
-        </li>
-        <li class="nav-item">
-          <a href="/main/seats">SEATS</a>
-        </li>
-        <li class="nav-item">
-          <a href="/login">LOGIN</a>
-        </li>
+        <li class="nav-item"><a class="active" href="/main">Home</a></li>
+        <li class="nav-item"><a href="/main/seats">SEATS</a></li>
+        <li class="nav-item"><a href="/login">LOGIN</a></li>
       </ul>
     </nav>
     <div class="container">
       <div class="popup">
         <span class="material-symbols-outlined"> verified </span>
         <h2>Thank You!</h2>
-        <p>Your payment was successful.</p>
-        <button type="button" onclick="location.href='/main'">OK</button>
+        <p style="margin-bottom:15px;">Your payment was successful.</p>
+        <button class="button" onclick="location.href='/main'">
+          OK
+        </button>
+        <style type="text/css">
+          .button {
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 5px 15px;
+            font-size: 16px;
+            border-radius: 5px;
+          }
+        </style>
       </div>
     </div>
-
-    <script type="text/javascript">
-      function call() {
-        location.href = "/main";
-      }
-    </script>
   </body>
 </html>

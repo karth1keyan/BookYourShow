@@ -2,7 +2,6 @@
 
 * {
     box-sizing: border-box;
-
 }
 
 body {
@@ -15,7 +14,6 @@ main {
     display: flex;
     flex-wrap: wrap;
 }
-
 /* ye baad me dekhte hai */
 .movie {
     box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
@@ -77,14 +75,10 @@ main {
     transition: transform 1s ease-in;
     max-width: 100%;
     overflow: auto;
-
-
-
 }
 
 .movie:hover .overview {
     transform: translateY(0);
-
 }
 
 .overview h4 {
